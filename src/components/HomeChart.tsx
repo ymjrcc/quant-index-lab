@@ -50,6 +50,7 @@ const HomeChart = ({
           {
             lines.map((line: any) => (
               <Line 
+                key={line.key}
                 type="monotone" 
                 dataKey={line.key}
                 name={line.name}
